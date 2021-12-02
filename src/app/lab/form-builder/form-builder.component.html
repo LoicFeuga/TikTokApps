@@ -1,0 +1,5 @@
+<div *ngIf="group" [formGroup]="group">
+  <input formControlName="name" type="text">
+  {{name}}
+  <button [disabled]="!valid">Valider</button>
+</div>

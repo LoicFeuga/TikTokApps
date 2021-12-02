@@ -1,0 +1,117 @@
+$blue: #3C5997;
+
+.app {
+  background: $blue;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial;
+}
+
+.top {
+  height: 30%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 50%;
+}
+
+
+.bot {
+  height: 100%;
+  background: white;
+  width: 100%;
+  padding: 4rem;
+  border-radius: 100px;
+}
+
+.login {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.log {
+  color: $blue;
+  margin-right: 1rem;
+}
+
+.container-email {
+  font-size: 2rem;
+  color: grey;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.container-input {
+  display: flex;
+  width: 100%;
+  background: #F3F1F4;
+  padding: 3rem 2rem;
+  border-radius: 50px;
+  height: 100%;
+}
+
+.email {
+  margin-bottom: 2rem;
+}
+
+.divider {
+  width: 3px;
+  background: grey;
+  margin-right: 1rem;
+}
+
+.envelop {
+  color: $blue;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.email-text {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
+.forgot {
+  margin-top: 1rem;
+  color: $blue;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5rem;
+}
+
+
+.button {
+  color: white;
+  background: $blue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 2rem;
+  border-radius: 50px;
+  height: 8rem;
+}
+
+.signin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.b {
+  color: $blue;
+  margin-left: 0.5rem;
+}

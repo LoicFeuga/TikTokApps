@@ -1,0 +1,33 @@
+
+<div class="top">
+  <div class="title">
+    ToDo App
+  </div>
+  <div class="container-input">
+    <input [formControl]="formName" input="text" class="input" placeholder="Add your new ToDo">
+    <div class="btn-plus" (click)="addItem()">
+      <i class="bi bi-plus-lg"></i>
+    </div>
+  </div>
+
+  <div class="container-item">
+    <div *ngFor="let item of items" class="item">
+      <div>
+      {{item}}
+      </div>
+
+      <div class="delete" (click)="deleteItem(item)">
+        <i class="bi bi-trash-fill"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bot">
+<div>
+  You have {{items.length}} pending tasks
+</div>
+  <div class="clear" (click)="clearAll()">
+    Clear All
+  </div>
+</div>

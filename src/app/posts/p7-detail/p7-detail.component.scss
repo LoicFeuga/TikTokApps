@@ -1,0 +1,142 @@
+$bg-article: #E3DFDE;
+$price: #DBB18A;
+:host {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  background: $bg-article;
+}
+
+.container {
+
+  width: 100%;
+  height: 40%;
+  background: white;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 2;
+  padding: 4rem;
+  padding-top: 8rem;
+  margin: 2rem;
+
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  gap: 10rem;
+  justify-content: space-between;
+
+  height: 100%;
+
+  &--action {
+    align-items: flex-end;
+  }
+}
+
+.label {
+  display: flex;
+  color: grey;
+  font-size: 5rem;
+}
+
+.amount {
+  display: flex;
+  font-size: 4rem;
+  color: $price;
+  font-weight: bold;
+  height: 100px;
+  align-items: flex-end;
+}
+
+.colors {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  color: grey;
+  flex: 1;
+
+  .title {
+    margin-bottom: 3rem;
+  }
+}
+
+.size {
+  background: grey;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 1rem;
+}
+
+.sizes {
+  flex: 1;
+  color: grey;
+
+  .title {
+    margin-bottom: 3rem;
+  }
+
+  font-size: 3rem;
+}
+
+.circles {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: black;
+
+  &--red {
+    background: red;
+  }
+
+  &--blue {
+    background: blue;
+  }
+
+  &--white {
+    background: yellow;
+  }
+}
+
+.name {
+  flex: 1;
+  display: flex;
+  height: 30px;
+  font-size: 4rem;
+}
+
+.image {
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+
+.buy {
+  flex: 1;
+  background: #CC9C68;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  border-radius: 40px;
+  height: 70%;
+
+}

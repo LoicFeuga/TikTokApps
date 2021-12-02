@@ -1,0 +1,163 @@
+$bg-btn: linear-gradient(120deg, #343A4F, #0F1620);
+$bg: linear-gradient(176deg, #3D9DEA, #4A4EEE);
+$lightblue: #3D9DEA;
+$darkblue: #4A4EEE;
+$text-color: #D5E1EF;
+
+:host {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: $text-color;
+  font-family: Roboto;
+}
+
+.top {
+  width: 100%;
+  height: 45%;
+  background: $bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.bot {
+  width: 100%;
+  height: 55%;
+  background: $bg-btn;
+  padding: 1.5rem;
+  padding-top: 3rem;
+}
+
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 3rem;
+  padding: 1rem;
+}
+
+.arrow {
+  transform: rotateY(180deg);
+}
+
+.cart {
+  background: $bg-btn;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  height: 2.5rem;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.content {
+  padding: 1.5rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+
+}
+
+.line {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.desc {
+  font-size: 0.8rem;
+}
+
+.bot-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.bot-desc {
+  margin-bottom: 1.5rem;
+}
+
+.item {
+  display: flex;
+  width: 50%;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.square {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  background: $bg-btn;
+}
+
+.s-title {
+  font-weight: bold;
+  margin-bottom: .2rem;
+}
+
+
+.cap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.b-line {
+  display: flex;
+  width: 100%;
+}
+
+.container-buy {
+  width: 100%;
+  height: 3rem;
+  background: $bg-btn;
+  justify-content: space-between;
+  border-radius: 10px;
+  align-items: center;
+  padding: 2rem 1rem;
+  display: flex;
+  border: 1px solid grey;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.pad {
+  position: absolute;
+  transform: rotateZ(-90deg);
+  top: 17%;
+  right: -50px;
+  height: 30%;
+}
+
+
+.price {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.btn-buy {
+  background: $bg;
+  padding: .5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+
+  svg {
+    margin-left: 1rem
+  }
+}

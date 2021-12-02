@@ -1,0 +1,43 @@
+<ng-container *ngIf="article">
+  <img [src]="article.url" alt="" class="image">
+
+
+  <div class="container">
+    <div class="name">
+      {{article.name}}
+    </div>
+
+    <div class="row">
+      <div class="colors">
+        <div class="title">Colors</div>
+        <div class="circles">
+          <div class="circle"></div>
+          <div class="circle circle--red"></div>
+          <div class="circle circle--blue"></div>
+          <div class="circle circle--white"></div>
+        </div>
+      </div>
+
+      <div class="sizes">
+        <div class="title">Sizes</div>
+        <div class="circles">
+          <div class="size">XS</div>
+          <div class="size size--red">S</div>
+          <div class="size size--blue">M</div>
+          <div class="size size--white">L</div>
+        </div>
+      </div>
+    </div>
+    <div class="row row--action">
+      <div class="price">
+        <div class="label">Price</div>
+        <div class="amount">
+          {{article.price}}
+        </div>
+      </div>
+      <div class="buy">
+        Add to cart
+      </div>
+    </div>
+  </div>
+</ng-container>

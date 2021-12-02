@@ -1,0 +1,48 @@
+<div class="title">
+  Top Netflix
+</div>
+<div class="content">
+  <swiper
+    (slideChange)="onSlideChange($event)"
+    (swiper)="onSwiper($event)"
+    [config]="config"
+  >
+    <ng-template swiperSlide>
+      <div [ngClass]="{'card--active': active === 0}" class="card">
+        <img alt="" class="card__img" src="assets/netflix/img1.png">
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div [ngClass]="{'card--active': active === 1}" class="card">
+        <img alt="" class="card__img" src="assets/netflix/img2.png">
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+
+      <div [ngClass]="{'card--active': active === 2}" class="card">
+        <img alt="" class="card__img" src="assets/netflix/img3.png">
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+
+      <div [ngClass]="{'card--active': active === 3}" class="card">
+        <img alt="" class="card__img" src="assets/netflix/img4.png">
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+
+      <div [ngClass]="{'card--active': active === 4}" class="card">
+        <img alt="" class="card__img" src="assets/netflix/img5.png">
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+
+      <div [ngClass]="{'card--active': active === 5}" class="card">
+        <img alt="" class="card__img" src="assets/netflix/img6.png">
+      </div>
+
+    </ng-template>
+  </swiper>
+
+</div>
+

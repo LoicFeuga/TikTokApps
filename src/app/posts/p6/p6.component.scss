@@ -1,0 +1,24 @@
+:host {
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  height: 200px;
+  position: relative;
+}
+
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border: 16px solid black;
+  border-radius: 50%;
+  border-left: unset;
+  position: absolute;
+
+}

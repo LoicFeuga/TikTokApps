@@ -1,0 +1,49 @@
+<!--<i class="bi bi-bell"></i>-->
+<!--<i class="bi bi-bag"></i>-->
+<!--<i class="bi bi-filter-right"></i>-->
+<!--<i class="bi bi-heart"></i>-->
+<!--<i class="bi bi-search"></i>-->
+
+<div class="row">
+  <div class="container-input">
+    <i class="bi bi-search"></i>
+    <input [formControl]="input" placeholder="Search..." type="text">
+  </div>
+  <div class="cart">
+    <i class="bi bi-bag"></i>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="labels">
+    <div class="new">
+      New
+    </div>
+    <div class="collection">
+      Collections
+    </div>
+  </div>
+
+  <i class="bi bi-filter-right"></i>
+
+</div>
+
+
+<div class="row row--article">
+
+  <div (click)="goDetail(article)" *ngFor="let article of articlesFiltered" class="container-article">
+    <div class="article">
+      <div (click)="liked(article.id, $event)" [ngClass]="{'heart--liked':article.liked}" class="heart">
+
+        <i class="bi bi-heart"></i>
+      </div>
+      <img [src]="article.url" class="article-img">
+    </div>
+
+    <div class="title">{{article.name}}</div>
+    <div class="price">{{article.price}}</div>
+  </div>
+
+
+</div>

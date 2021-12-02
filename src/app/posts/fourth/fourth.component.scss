@@ -1,0 +1,29 @@
+.popUpWord {
+  font-size: 2rem;
+  background: black;
+  color: white;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.outPop:hover {
+  background: linear-gradient( black , black) white no-repeat 0 0;
+  background-size: 0 100%;
+  animation: stripes 5s linear 1 forwards;
+
+}
+.outPop:hover .popUpWord{
+  mix-blend-mode: multiply;
+  width: 100px;
+  background: linear-gradient(to right, black 100%, white 50%);
+  background-size: 200% 100%;
+  background-position:left bottom;
+}
+
+@keyframes stripes {
+  to {
+    background-size:100px 100%;
+  }
+}
+
