@@ -21,8 +21,13 @@ import {P5Component} from "./posts/p5/p5.component";
 import {P6Component} from "./posts/p6/p6.component";
 import {P7Component} from "./posts/p7/p7.component";
 import {P7DetailComponent} from "./posts/p7-detail/p7-detail.component";
+import {MainComponent} from "./main/main.component";
 
 const routes: Routes = [
+  {
+    path: '',
+    component: MainComponent
+  },
   {
     path: 'first',
     component: FirstComponent

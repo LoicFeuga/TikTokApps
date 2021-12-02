@@ -8,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class TenthComponent implements OnInit {
 
   constructor() {
+    console.log('Tenth loaded');
   }
 
   ngOnInit(): void {
